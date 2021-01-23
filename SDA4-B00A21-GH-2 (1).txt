@@ -1,0 +1,153 @@
+username sdajwcadmin privilege 15 secret C!sc0123
+username sda.admin privilege 15 secret 9 $14$BfMf$KsUO9mL4.xk0/U$uWhOC/lMWrjdbRuRLP2ucJooxjblF6VRHbDpWxfg3nQ
+
+
+
+
+SDA4-B00A21-GH-2#sh sw
+Switch/Stack Mac Address : 34f8.e75d.d400 - Local Mac Address
+Mac persistency wait time: Indefinite
+                                             H/W   Current
+Switch#   Role    Mac Address     Priority Version  State
+-------------------------------------------------------------------------------------
+*1       Active   34f8.e75d.d400     1      V02     Ready
+
+
+
+SDA4-B00A21-GH-2#sh ver
+SDA4-B00A21-GH-2#sh version
+Cisco IOS XE Software, Version 16.12.03s
+Cisco IOS Software [Gibraltar], Catalyst L3 Switch Software (CAT9K_IOSXE), Version 16.12.3s, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2020 by Cisco Systems, Inc.
+Compiled Tue 19-May-20 11:48 by mcpre
+
+
+Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+All rights reserved.  Certain components of Cisco IOS-XE software are
+licensed under the GNU General Public License ("GPL") Version 2.0.  The
+software code licensed under GPL Version 2.0 is free software that comes
+with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+GPL code under the terms of GPL Version 2.0.  For more details, see the
+documentation or "License Notice" file accompanying the IOS-XE software,
+or the applicable URL provided on the flyer accompanying the IOS-XE
+software.
+
+
+ROM: IOS-XE ROMMON
+BOOTLDR: System Bootstrap, Version 16.12.2r, RELEASE SOFTWARE (P)
+
+SDA4-B00A21-GH-2 uptime is 4 minutes
+Uptime for this control processor is 5 minutes
+System returned to ROM by Reload Command at 06:26:40 UTC Wed Jan 20 2021
+System image file is "flash:packages.conf"
+Last reload reason: Reload Command
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+
+Technology Package License Information:
+
+------------------------------------------------------------------------------
+Technology-package                                     Technology-package
+Current                        Type                       Next reboot
+------------------------------------------------------------------------------
+network-advantage       Smart License                    network-advantage
+dna-advantage           Subscription Smart License       dna-advantage
+AIR License Level: AIR DNA Advantage
+Next reload AIR license Level: AIR DNA Advantage
+
+
+Smart Licensing Status: UNREGISTERED - REGISTRATION FAILED/EVAL MODE
+
+cisco C9300-24U (X86) processor with 1343635K/6147K bytes of memory.
+Processor board ID FCW2240C020
+89 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+8 Ten Gigabit Ethernet interfaces
+2 TwentyFive Gigabit Ethernet interfaces
+2 Forty Gigabit Ethernet interfaces
+2048K bytes of non-volatile configuration memory.
+8388608K bytes of physical memory.
+1638400K bytes of Crash Files at crashinfo:.
+11264000K bytes of Flash at flash:.
+0K bytes of WebUI ODM Files at webui:.
+
+Base Ethernet MAC Address          : 34:f8:e7:5d:d4:00
+Motherboard Assembly Number        : 73-18272-03
+Motherboard Serial Number          : FOC223892W8
+Model Revision Number              : A0
+Motherboard Revision Number        : A0
+Model Number                       : C9300-24U
+System Serial Number               : FCW2240C020
+
+
+Switch Ports Model              SW Version        SW Image              Mode
+------ ----- -----              ----------        ----------            ----
+*    1 41    C9300-24U          16.12.3s          CAT9K_IOSXE           INSTALL
+
+
+Configuration register is 0x102
+
+SDA4-B00A21-GH-2#sh cdp ne
+SDA4-B00A21-GH-2#sh cdp neighbors
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone,
+                  D - Remote, C - CVTA, M - Two-port Mac Relay
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+Test_GH_2        Gig 1/0/1         132              R T   AIR-AP480 Gig 0
+APF4DB.E683.CDEC Gig 1/0/2         130              R T   AIR-AP480 Gig 0
+SDA4-B00A21-EN-1.in.ril.com
+                 Ten 1/1/2         149             R S I  C9300-48U Ten 1/1/4
+SDA4-B00A21-EN-1.in.ril.com
+                 Ten 1/1/1         159             R S I  C9300-48U Ten 1/1/3
+axis-accc8ebc4bf5
+                 Gig 1/0/15        104               H    Linux     eth0
+
+Total cdp entries displayed : 5
+SDA4-B00A21-GH-2#sh isis ne
+SDA4-B00A21-GH-2#sh isis neighbors
+
+System Id       Type Interface     IP Address      State Holdtime Circuit Id
+SDA4-B00A21-EN- L1L2 Te1/1/1       172.16.60.144   UP    29       3F
+SDA4-B00A21-EN- L1L2 Te1/1/2       172.16.60.163   UP    25       40
+SDA4-B00A21-GH-2#sh run | i usernam
+SDA4-B00A21-GH-2#sh run | i usernam
+username sda.admin privilege 15 secret 9 $14$BfMf$KsUO9mL4.xk0/U$uWhOC/lMWrjdbRuRLP2ucJooxjblF6VRHbDpWxfg3nQ
+username sdajwcadmin privilege 15 secret 9 $9$e94p4S8DWmnPik$p8sOrmkYoxtFPRg1VGRN1qYK/yy037ZENZALdz1ZzcQ
+SDA4-B00A21-GH-2#sh st
+SDA4-B00A21-GH-2#sh sta
+SDA4-B00A21-GH-2#sh start
+SDA4-B00A21-GH-2#sh startup-config | i userna
+SDA4-B00A21-GH-2#sh startup-config | i userna
+username sda.admin privilege 15 secret 9 $14$BfMf$KsUO9mL4.xk0/U$uWhOC/lMWrjdbRuRLP2ucJooxjblF6VRHbDpWxfg3nQ
+username sdajwcadmin privilege 15 secret 9 $9$e94p4S8DWmnPik$p8sOrmkYoxtFPRg1VGRN1qYK/yy037ZENZALdz1ZzcQ
+SDA4-B00A21-GH-2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SDA4-B00A21-GH-2(config)#$.xk0/U$uWhOC/lMWrjdbRuRLP2ucJooxjblF6VRHbDpWxfg3nQ
+This operation will remove all username related configurations with same name.Do you want to continue? [confirm]
+SDA4-B00A21-GH-2(config)#do wr
+Building configuration...
+[OK]
+SDA4-B00A21-GH-2(config)#no logging console
+SDA4-B00A21-GH-2#sh run | i user
+SDA4-B00A21-GH-2#sh run | i userna
+SDA4-B00A21-GH-2#sh run | i userna
+username sdajwcadmin privilege 15 secret 9 $9$e94p4S8DWmnPik$p8sOrmkYoxtFPRg1VGRN1qYK/yy037ZENZALdz1ZzcQ
+SDA4-B00A21-GH-2#
